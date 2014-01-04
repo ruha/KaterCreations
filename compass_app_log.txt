@@ -1,0 +1,17 @@
+2014-01-03 08:29:45     error sass/screen.scss (Line 107: Invalid CSS after "...max-width:480px": expected ")", was ";) {")
+2014-01-03 08:29:45 overwrite stylesheets/screen.css 
+2014-01-03 08:29:59     error sass/screen.scss (Line 115: Invalid CSS after "...min-width:768px": expected ")", was ";) and (max-wid...")
+2014-01-03 08:29:59 overwrite stylesheets/screen.css 
+2014-01-03 08:30:08 overwrite stylesheets/screen.css 
+2014-01-03 08:34:39 overwrite stylesheets/screen.css 
+2014-01-03 08:36:59 overwrite stylesheets/screen.css 
+2014-01-03 08:39:59 overwrite stylesheets/screen.css 
+2014-01-03 08:40:56 overwrite stylesheets/screen.css 
+2014-01-03 08:41:27 overwrite stylesheets/screen.css 
+2014-01-03 08:41:38 overwrite stylesheets/screen.css 
+2014-01-03 08:42:01 overwrite stylesheets/screen.css 
+2014-01-03 08:43:33 overwrite stylesheets/screen.css 
+2014-01-03 08:44:00 overwrite stylesheets/screen.css 
+2014-01-03 08:46:05 overwrite stylesheets/screen.css 
+2014-01-03 08:46:43 identical stylesheets/screen.css 
+2014-01-03 08:46:48 identical stylesheets/screen.css 
