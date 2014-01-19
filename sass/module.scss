@@ -1,0 +1,56 @@
+
+// From https://github.com/daneden/animate.css
+
+.button-resize:hover {
+	-webkit-animation: resizer .5s linear;
+	-moz-animation: resizer .5s linear;
+	-o-animation: resizer .5s linear;
+	animation: resizer .5s linear;
+}
+
+@-webkit-keyframes resizer {
+  0%, 100% { -webkit-transform: scale(1); }
+  50% { -webkit-transform: scale(1.4); }
+}
+
+@-moz-keyframes resizer {
+  0%, 100% { -moz-transform: scale(1); }
+  50% { -moz-transform: scale(1.4); }
+}
+
+@-o-keyframes resizer {
+  0%, 100% { -o-transform: scale(1); }
+  50% { -o-transform: scale(1.4); }
+}
+
+@keyframes resizer {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+}
+
+.bot-contact {
+	.social {
+			padding: 10px;
+		}
+
+		.social a:link {
+			margin: 10px;
+			font-size: 200%;
+		}
+
+		.social a:hover {
+			
+		}
+}
+
+.theme-change {
+	.theme-drupal,
+	.theme-joomla,
+	.theme-wp {
+		float: left;
+		width:29%;
+		height:20px;
+		margin: 0 2%;
+	}
+}
+
