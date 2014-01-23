@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.6" type="template" client="site">
+	<name>Murr</name>
+	<creationDate>03-13-12</creationDate>
+	<author>Ruthie Hassan</author>
+	<authorEmail>ruthie@katercreations.com</authorEmail>
+	<authorUrl>http://www.KaterCreations.com</authorUrl>
+	<copyright>Copyright (C) 2012 KaterCreations, Ruthie Hassan All rights reserved.</copyright>
+	<license></license>
+	<version>1.0.2</version>
+	<description>Main template for KaterCreations.com</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>javascript</folder>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+	</files>
+
+	<positions>
+		<position>header</position>
+		<position>left</position>
+		<position>right</position>
+		<position>breadcrumbs</position>
+		<position>footer</position>
+	</positions>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="sitedescription" type="text" default=""
+					label="Site Tagline"
+					description="Enter the tagline that will appear at the top of the web page."
+					filter="string" />
+
+				</fieldset>
+		</fields>
+	</config>
+	
+</extension>

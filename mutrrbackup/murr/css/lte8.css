@@ -1,0 +1,72 @@
+#header {
+  background:linear-gradient(top,  rgba(0,51,102,1) 0%,rgba(78,134,183,1) 72%,rgba(85,142,191,0.7) 78%,rgba(125,185,232,0) 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#003366', endColorstr='#007db9e8',GradientType=0 );
+}
+
+#header ul a:link,
+#header ul a:visited {
+  background:#bababa;
+  border:solid 2px #41719f;
+  color:#41719f;
+  border-bottom:none;
+}
+
+#header ul a:hover {
+  color:#036;
+  background:#fff;
+  border:solid 2px #036;
+  border-bottom:#fff;
+}
+
+#header li.active a:link,
+#header li.active a:visited {
+  color:#036;
+  background:#fff;
+  border:solid 2px #036;
+  border-bottom:#fff;
+}
+
+#header li.active a:hover {
+  color:#036;
+}
+
+.customabout {
+  background:#efefef;
+  border:solid 3px #036;
+}
+
+/* About & Blog Page */
+  
+div.item-page,
+div.category-desc,
+div.leading-0,
+div.leading-1,
+div.leading-2,
+div.leading-3,
+div.leading-4,
+div.leading-5,
+div.leading-6,
+div.leading-7,
+div.leading-8,
+div.leading-9,
+div.leading-10 {
+  background:#efefef;
+  border:solid 3px #036;
+}
+
+#contact-form fieldset {
+  background:#e5eaef;
+  background:linear-gradient(top, rgba(0,51,102,0.3) 0%,rgba(161,219,255,0.3) 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#003366', endColorstr='#a1dbff',GradientType=0 );
+  font-weight:bold;
+}
+
+.items-more ol a:link,
+.items-more ol a:visited {
+  border-bottom:solid 2px #41719f;
+  color:#41719f;
+}
+
+.items-more li.active a:hover {
+  color:#036;
+}

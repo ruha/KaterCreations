@@ -1,0 +1,60 @@
+
+
+@mixin breakpoint($point) {
+
+	@if $point == mobile {
+		@media screen and (max-width:480px) { @content; }
+	}
+
+	@else if $point == tablet {
+		@media screen and (max-width:768px) { @content; }
+	}
+
+	@else if $point == desktop {
+		@media screen and (min-width:768px) { @content; }
+	}
+
+	@else if $point == wide {
+		@media screen and (min-width:1200px) { @content; }
+	}
+
+	@else if $point == print {
+		@media print { @content; }
+	}
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin smooth-color {
+	-webkit-transition: color .3s ease;
+	-moz-transition: color .3s ease;
+	-o-transition: color .3s ease;
+	transition: color .3s ease;
+}
+
+@mixin smooth-font {
+	-webkit-transition: font-size .3s ease;
+	-moz-transition: font-size .3s ease;
+	-o-transition: font-size .3s ease;
+	transition: font-size .3s ease;
+}
+
+@mixin smooth-margin {
+	-webkit-transition: margin .3s ease;
+	-moz-transition: margin .3s ease;
+	-o-transition: margin .3s ease;
+	transition: margin .3s ease;
+}
+
+@mixin smooth-width {
+	-webkit-transition: width .5s ease;
+	-moz-transition: width .5s ease;
+	-o-transition: width .5s ease;
+	transition: width .5s ease;
+}

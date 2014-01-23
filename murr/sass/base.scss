@@ -1,0 +1,68 @@
+
+body {
+  margin: 0; 
+  padding: 0; 
+  font: 1em/125% Tahoma, Geneva, sans-serif;
+  background: #fff none repeat;
+  color: #000;
+}
+
+/*Text */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  color: #000;
+  font-weight: normal;
+}
+
+/*Links */
+
+a:link,
+a:visited {
+  color: #800000;
+  text-decoration: none;
+  transition: .8s;
+  @include border-radius(3px);
+}
+  
+a:hover {
+  color: #c30000;
+  background-color: #f5f5f5;
+}
+
+/*General */
+
+header,
+.content,
+footer,
+.copyright {
+	clear: both;
+	margin: 0 auto;
+	position: relative;
+}
+
+header,
+.content,
+.copyright {
+	padding: 20px;
+	
+}
+
+.content {
+	p {
+		margin-bottom: .5em;
+	}
+}
+
+header {
+
+}
+
+footer {
+
+	.footer-left,
+	.bot-contact,
+	.theme-change {
+		position: relative;
+	}
+}
