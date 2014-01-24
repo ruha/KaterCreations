@@ -40,11 +40,11 @@ defined('_JEXEC') or die;
 		// Render all but last item - along with separator
 		if (!empty($item->link))
 		{
-			echo '<a href="' . $item->link . '" class="pathway"  itemprop="url">' . '<span itemprop="title">' . $item->name . '</span>' . '</a>';
+			echo '<a href="' . $item->link . '" class="pathway">' . $item->name . '</a>';
 		}
 		else
 		{
-			echo '<span itemprop="title">' . $item->name . '</span>';
+			echo '<span>' . $item->name . '</span>';
 		}
 
 		if (($key != $penult_item_key) || $show_last)
@@ -56,7 +56,7 @@ defined('_JEXEC') or die;
 	elseif ($show_last)
 	{
 		// Render last item if reqd.
-		echo '<span itemprop="title">' . $item->name . '</span>';
+		echo '<span>' . $item->name . '</span>';
 	}
 	endforeach; ?>
 </div>

@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
-<extension version="1.6" type="template" client="site">
+<extension version="2.5" type="template">
 	<name>Murr</name>
 	<creationDate>03-13-12</creationDate>
 	<author>Ruthie Hassan</author>
 	<authorEmail>ruthie@katercreations.com</authorEmail>
 	<authorUrl>http://www.KaterCreations.com</authorUrl>
 	<copyright>Copyright (C) 2012 KaterCreations, Ruthie Hassan All rights reserved.</copyright>
-	<license></license>
-	<version>1.0.2</version>
+	<license>GNU/GPL</license>
+	<version>2.0.1</version>
 	<description>Main template for KaterCreations.com</description>
 
 	<files>
 		<folder>css</folder>
+		<folder>stylesheets</folder>
+		<folder>sass</folder>
+		<folder>font</folder>
 		<folder>html</folder>
 		<folder>images</folder>
 		<folder>javascript</folder>
@@ -26,10 +28,11 @@
 
 	<positions>
 		<position>header</position>
-		<position>left</position>
-		<position>right</position>
 		<position>breadcrumbs</position>
+		<position>content</position>
+		<position>sidebar</position>
 		<position>footer</position>
+		<position>copyright</position>
 	</positions>
 	
 	<config>

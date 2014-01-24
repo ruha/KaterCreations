@@ -2,7 +2,7 @@
 /**
  * @package		Joomla.Site
  * @subpackage	com_content
- * @copyright	Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @copyright	Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -20,7 +20,7 @@ $user		= JFactory::getUser();
 
 ?>
 <div class="item-page<?php echo $this->pageclass_sfx?>">
-<?php if ($this->params->get('show_page_heading', 1)) : ?>
+<?php if ($this->params->get('show_page_heading')) : ?>
 	<h1>
 	<?php echo $this->escape($this->params->get('page_heading')); ?>
 	</h1>
@@ -33,7 +33,7 @@ if (!empty($this->item->pagination) AND $this->item->pagination && !$this->item-
  ?>
 
 <?php if ($params->get('show_title')) : ?>
-	<h2>
+	<h2 class="page-title">
 	<?php if ($params->get('link_titles') && !empty($this->item->readmore_link)) : ?>
 		<a href="<?php echo $this->item->readmore_link; ?>">
 		<?php echo $this->escape($this->item->title); ?></a>
@@ -85,7 +85,7 @@ endif; ?>
 
 <?php if ($useDefList) : ?>
 	<dl class="article-info">
-	<dt class="article-info-term"><?php  echo JText::_('COM_CONTENT_ARTICLE_INFO'); ?></dt>
+	<!-- dt class="article-info-term"><?php  echo JText::_('COM_CONTENT_ARTICLE_INFO'); ?></dt -->
 <?php endif; ?>
 <?php if ($params->get('show_parent_category') && $this->item->parent_slug != '1:root') : ?>
 	<dd class="parent-category-name">
@@ -130,7 +130,8 @@ endif; ?>
 	<?php if (!empty($this->item->contactid) && $params->get('link_author') == true): ?>
 	<?php
 		$needle = 'index.php?option=com_contact&view=contact&id=' . $this->item->contactid;
-		$item = JSite::getMenu()->getItems('link', $needle, true);
+		$menu = JFactory::getApplication()->getMenu();
+		$item = $menu->getItems('link', $needle, true);
 		$cntlink = !empty($item) ? $needle . '&Itemid=' . $item->id : $needle;
 	?>
 		<?php echo JText::sprintf('COM_CONTENT_WRITTEN_BY', JHtml::_('link', JRoute::_($cntlink), $author)); ?>
@@ -168,9 +169,6 @@ endif; ?>
 	src="<?php echo htmlspecialchars($images->image_fulltext); ?>" alt="<?php echo htmlspecialchars($images->image_fulltext_alt); ?>"/>
 </div>
 <?php endif; ?>
-
-<jdoc:include type="module" name="JoomlaShareThis" title="JoomlaShareThis" />
-
 <?php
 if (!empty($this->item->pagination) AND $this->item->pagination AND !$this->item->paginationposition AND !$this->item->paginationrelative):
 	echo $this->item->pagination;
